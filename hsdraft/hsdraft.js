@@ -1,14 +1,15 @@
-if (Meteor.isClient) {
-  Template.hello.greeting = function () {
-    return "Welcome to hsdraft.";
-  };
+Questions = new Meteor.Collection('Questions');
 
-  Template.hello.events({
-    'click input': function () {
-      // template data, if any, is available in 'this'
-      if (typeof console !== 'undefined')
-        console.log("You pressed the button");
-    }
+if (Meteor.isClient) {
+  Template.question.allQuestions = function() {
+    return Questions.find();
+  };  
+
+  Template.questions.events({
+    "click #questionAsk": function(evt, templ) {
+      var question = templ.find("#questionText").value;
+      Questions.insert({question: question, score: 1});
+    }  
   });
 }
 
