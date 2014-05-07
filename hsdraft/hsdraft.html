@@ -1,11 +1,39 @@
 <head>
-  <title>hsdraft</title>
+  <title>HSDraft</title>
 </head>
 
 <body>
-  {{> hello}}
-  {{> questions}}
+
+      <!-- Static navbar -->
+    <div class="container">  
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">HSDraft</a></li>
+              <li><a href="#">Heroes</a></li>
+              <li><a href="#">Cards</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Accounts buttons</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </div>
+    </div>
 </body>
+
+<template name="hsdraft">
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">HSDraft</a>
+      </div>
+    </nav>
+  </div>    
+</template>
+    
+
 
 <template name="questions">
   <h1>Ask a question</h1>
