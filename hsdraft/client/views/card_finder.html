@@ -3,11 +3,15 @@
   <div class="cardsList">
     <form class="form-inline">
       <div class="form-group">
-        <input type="card1" placeholder="card1">
-        <input type="card2" placeholder="card2">
-        <input type="card3" placeholder="card3">
+        {{> inputAutocomplete settings=settings id="card0" class="input-xlarge" placeholder="Chat..."}}
+        {{> inputAutocomplete settings=settings id="card1" class="input-xlarge" placeholder="Chat..."}}
+        {{> inputAutocomplete settings=settings id="card2" class="input-xlarge" placeholder="Chat..."}}
         <button type="submit" class="btn btn-default">Okgo</button>
       </div>
     </form>
   </div>
+</template>
+
+<template name="cardFinderLabel">
+  <span class="label">{{name}}</span>
 </template>

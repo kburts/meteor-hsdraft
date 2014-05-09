@@ -1,7 +1,20 @@
 {
   "meteor": {},
   "dependencies": {
-    "basePackages": {},
-    "packages": {}
+    "basePackages": {
+      "autocomplete": {}
+    },
+    "packages": {
+      "autocomplete": {
+        "git": "https://github.com/mizzao/meteor-autocomplete.git",
+        "tag": "v0.4.3",
+        "commit": "a70bd9b6b9f5576a0fa96a7a3440b1a7d83e4a32"
+      },
+      "caret-position": {
+        "git": "https://github.com/StockBase/meteor-caret-position.git",
+        "tag": "v2.1.0-3",
+        "commit": "6028cf980f62cbf72cb2ea527091a3a31f87b8a7"
+      }
+    }
   }
 }
