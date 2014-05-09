@@ -22,22 +22,30 @@
             <li><a href="#">Cards</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Accounts buttons</a></li>
+            <li><a href="#">{{> loginButtons}}</a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </template>
-
+<!--
 <template name="heroesList">
   <div class="heroesList">
     <h1>Heroes List</h1>
+    <ul>
     {{#each heroes}}
-      {{name}}
-      <p>Hello</p>
+      {{> heroDetail}}
     {{/each}}
+  </ul>
   </div>
+</template>
+
+<template name="heroDetail">
+  <li> 
+    {{name}} -
+    {{score}} 
+  </li>
 </template>
     
 <template name="cardFinder">
@@ -53,3 +61,4 @@
     </form>
   </div>
 </template>
+-->
