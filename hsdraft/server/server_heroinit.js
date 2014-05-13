@@ -10,6 +10,6 @@
                    "Shaman",
                    "Warrior"];
       for (var i = 0; i < heroes.length; i++)
-        Heroes.insert({name: heroes[i], score: Math.floor(Random.fraction()*10)*5});
+        Heroes.insert({name: heroes[i], score: Math.floor(Random.fraction()*10)*5, image: "/images/Heroes/" + heroes[i] + ".png"});
     }
   });
